@@ -1,0 +1,15 @@
+<h2>Resume Screening Results</h2>
+<table>
+  <tr>
+    <th>Candidate Name</th>
+    <th>Score</th>
+    <th>Email</th>
+  </tr>
+  <% resumes.forEach(resume => { %>
+    <tr>
+      <td><%= resume.name %></td>
+      <td><%= resume.score %></td>
+      <td><%= resume.email %></td>
+    </tr>
+  <% }) %>
+</table>
