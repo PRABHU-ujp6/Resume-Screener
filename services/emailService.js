@@ -1,18 +1,18 @@
-import nodemailer from 'nodemailer';
-import dotenv from 'dotenv';
+const nodemailer =  require('nodemailer');
+const dotenv =  require('dotenv');
 
 dotenv.config();
 
 const transporter = nodemailer.createTransport({
   service: 'gmail', // Or your SMTP service
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS
+    api_key:
+        process.env.SENDGRID_API_KEY,
   }
 });
 
 // Send email function
-export async function sendShortlistEmail(to, name) {
+exports.sendShortlistEmail = async (to, name) => {
   try {
     const mailOptions = {
       from: process.env.EMAIL_USER,

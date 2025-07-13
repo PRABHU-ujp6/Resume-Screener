@@ -1,6 +1,11 @@
+  <%- include('./partials/header.ejs')  %>
+
+
 <h2>Shortlisted Candidates</h2>
 <ul>
   <% shortlisted.forEach(candidate => { %>
     <li><%= candidate.name %> - <%= candidate.email %></li>
   <% }) %>
 </ul>
+
+  <%- include('./partials/footer.ejs')  %>

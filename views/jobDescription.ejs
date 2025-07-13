@@ -1,5 +1,10 @@
+  <%- include('./partials/header.ejs')  %>
+
+
 <h2>Enter Job Description</h2>
-<form action="/jobdescription" method="POST">
+<form action="/jobdesc/jobdescription" method="POST">
   <textarea name="description" rows="10" cols="50" required></textarea><br>
   <button type="submit">Submit JD</button>
 </form>
+
+  <%- include('./partials/footer.ejs')  %>

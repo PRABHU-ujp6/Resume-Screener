@@ -39,6 +39,48 @@ nav a:hover {
   color: #dff9fb;
 }
 
+
+/* Home page button section */
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.home-actions .button-link {
+  flex: 1 1 220px;
+  text-align: center;
+  padding: 16px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #2e86de, #3498db);
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.home-actions .button-link:hover {
+  background: linear-gradient(135deg, #1e70c1, #2980b9);
+  transform: translateY(-2px);
+}
+
+/* 404 Page styling */
+.not-found {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.not-found p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+
 /* Main content */
 main {
   max-width: 1000px;

@@ -1,10 +1,10 @@
 const pdfParse = require('pdf-parse');
 const mammoth = require('mammoth');
-const fs = require('fs');
+const fs = require('fs').promises;
 const path = require('path');
 
-export async function parseResume(filePath){
-    const ext = path.extname(filePath);
+exports.parseResume = async(filePath) => {
+    const ext = path.extname(filePath).toLowerCase();
 
     if(ext === '.pdf'){
         const dataBuffer = await fs.readFile(filePath);

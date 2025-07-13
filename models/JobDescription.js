@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 
 const jobDescriptionSchema = new Schema({
 
-    decsription: {
+    description: {
         type: String,
         required: true
     },
